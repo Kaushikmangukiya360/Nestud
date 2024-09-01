@@ -1,0 +1,290 @@
+{% extends "base.html" %}
+{% block title %}NeStud - IT Student Palteform {% endblock title %}
+{% block activeMentorship %}active{% endblock activeMentorship %}
+{% block content %}
+
+<header class="site-header d-flex flex-column justify-content-center align-items-center course-hero-section">
+    <div class="course-hero-banner">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-5 col-12 mb-5">
+                    <h2 class="text-white text-center">Mentorship</h2>
+                </div>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="{% url "index" %}">Homepage</a></li>
+
+                        <li class="breadcrumb-item active" aria-current="page">Mentorship</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="team-section section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-9 col-lg-6 text-center m-auto">
+                <h3 class="global__text">
+                    <i class="fa fa-group"></i>our team</h3>
+                <h2 class="global__heading">Our Expert Volunteer
+                </h2>
+            </div>
+        </div>
+
+        <div class="team__grid">
+            <!-- User 01 -->
+            <div class="team__card">
+                <div class="team__card-head">
+                    <img class="img-fluid" src="https://asset.uibucket.net/html/safefundz/assets/img/user-1.png" alt="user image">
+                    <div class="team__card-head--social">
+                        <ul class="">
+                            <li><a class="team__card-head--link" href="https://www.facebook.com/"><i
+                                        class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a class="team__card-head--link" href="https://linkedin.com"><i
+                                        class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li><a class="team__card-head--link" href="https://www.instagram.com"><i
+                                        class="fa fa-instagram"></i></a>
+                            </li>
+                            <li><a class="team__card-head--link" href="https://twitter.com"><i
+                                        class="fa fa-twitter"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="">
+                    <a href="#" class="team__user">Leslie Alexander</a>
+                    <p class="team__cate">Volunteer</p>
+                </div>
+            </div>
+            <div class="team__card">
+                <div class="team__card-head">
+                    <img class="img-fluid" src="https://asset.uibucket.net/html/safefundz/assets/img/user-2.png" alt="user image">
+                    <div class="team__card-head--social">
+                        <ul class="">
+                            <li><a class="team__card-head--link" href="https://www.facebook.com/"><i
+                                        class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a class="team__card-head--link" href="https://linkedin.com"><i
+                                        class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li><a class="team__card-head--link" href="https://www.instagram.com"><i
+                                        class="fa fa-instagram"></i></a>
+                            </li>
+                            <li><a class="team__card-head--link" href="https://twitter.com"><i
+                                        class="fa fa-twitter"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="">
+                    <a href="#" class="team__user">Marilyn Ramirez</a>
+                    <p class="team__cate">Volunteer</p>
+                </div>
+            </div>
+            <div class="team__card">
+                <div class="team__card-head">
+                    <img class="img-fluid" src="https://asset.uibucket.net/html/safefundz/assets/img/user-3.png" alt="user image">
+                    <div class="team__card-head--social">
+                        <ul class="">
+                            <li><a class="team__card-head--link" href="https://www.facebook.com/"><i
+                                        class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a class="team__card-head--link" href="https://linkedin.com"><i
+                                        class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li><a class="team__card-head--link" href="https://www.instagram.com"><i
+                                        class="fa fa-instagram"></i></a>
+                            </li>
+                            <li><a class="team__card-head--link" href="https://twitter.com"><i
+                                        class="fa fa-twitter"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="">
+                    <a href="#" class="team__user">Dianne Russell</a>
+                    <p class="team__cate">Volunteer</p>
+                </div>
+            </div>
+            <div class="team__card">
+                <div class="team__card-head">
+                    <img class="img-fluid" src="https://asset.uibucket.net/html/safefundz/assets/img/user-4.png" alt="user image">
+                    <div class="team__card-head--social">
+                        <ul class="">
+                            <li><a class="team__card-head--link" href="https://www.facebook.com/"><i
+                                        class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a class="team__card-head--link" href="https://linkedin.com"><i
+                                        class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li><a class="team__card-head--link" href="https://www.instagram.com"><i
+                                        class="fa fa-instagram"></i></a>
+                            </li>
+                            <li><a class="team__card-head--link" href="https://twitter.com"><i
+                                        class="fa fa-twitter"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="">
+                    <a href="#" class="team__user">Jenny Wilson</a>
+                    <p class="team__cate">Volunteer</p>
+                </div>
+            </div>
+            <div class="team__card">
+                <div class="team__card-head">
+                    <img class="img-fluid" src="https://preview.colorlib.com/theme/oneder/images/person_5.jpg.webp" alt="user image">
+                    <div class="team__card-head--social">
+                        <ul class="">
+                            <li><a class="team__card-head--link" href="https://www.facebook.com/"><i
+                                        class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a class="team__card-head--link" href="https://linkedin.com"><i
+                                        class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li><a class="team__card-head--link" href="https://www.instagram.com"><i
+                                        class="fa fa-instagram"></i></a>
+                            </li>
+                            <li><a class="team__card-head--link" href="https://twitter.com"><i
+                                        class="fa fa-twitter"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="">
+                    <a href="#" class="team__user">Kaiara Spencer</a>
+                    <p class="team__cate">Volunteer</p>
+                </div>
+            </div>
+            <div class="team__card">
+                <div class="team__card-head">
+                    <img class="img-fluid" src="https://preview.colorlib.com/theme/oneder/images/person_6.jpg" alt="user image">
+                    <div class="team__card-head--social">
+                        <ul class="">
+                            <li><a class="team__card-head--link" href="https://www.facebook.com/"><i
+                                        class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a class="team__card-head--link" href="https://linkedin.com"><i
+                                        class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li><a class="team__card-head--link" href="https://www.instagram.com"><i
+                                        class="fa fa-instagram"></i></a>
+                            </li>
+                            <li><a class="team__card-head--link" href="https://twitter.com"><i
+                                        class="fa fa-twitter"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="">
+                    <a href="#" class="team__user">Dave Simpson</a>
+                    <p class="team__cate">Volunteer</p>
+                </div>
+            </div>
+            <div class="team__card">
+                <div class="team__card-head">
+                    <img class="img-fluid" src="https://preview.colorlib.com/theme/oneder/images/person_7.jpg" alt="user image">
+                    <div class="team__card-head--social">
+                        <ul class="">
+                            <li><a class="team__card-head--link" href="https://www.facebook.com/"><i
+                                        class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a class="team__card-head--link" href="https://linkedin.com"><i
+                                        class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li><a class="team__card-head--link" href="https://www.instagram.com"><i
+                                        class="fa fa-instagram"></i></a>
+                            </li>
+                            <li><a class="team__card-head--link" href="https://twitter.com"><i
+                                        class="fa fa-twitter"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="">
+                    <a href="#" class="team__user">Ben Thompson</a>
+                    <p class="team__cate">Volunteer</p>
+                </div>
+            </div>
+            <div class="team__card">
+                <div class="team__card-head">
+                    <img class="img-fluid" src="https://preview.colorlib.com/theme/oneder/images/person_8.jpg" alt="user image">
+                    <div class="team__card-head--social">
+                        <ul class="">
+                            <li><a class="team__card-head--link" href="https://www.facebook.com/"><i
+                                        class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a class="team__card-head--link" href="https://linkedin.com"><i
+                                        class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li><a class="team__card-head--link" href="https://www.instagram.com"><i
+                                        class="fa fa-instagram"></i></a>
+                            </li>
+                            <li><a class="team__card-head--link" href="https://twitter.com"><i
+                                        class="fa fa-twitter"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="">
+                    <a href="#" class="team__user">Kyla Stewart</a>
+                    <p class="team__cate">Volunteer</p>
+                </div>
+            </div>
+            <div class="team__card">
+                <div class="team__card-head">
+                    <img class="img-fluid" src="https://preview.colorlib.com/theme/oneder/images/person_2.jpg" alt="user image">
+                    <div class="team__card-head--social">
+                        <ul class="">
+                            <li><a class="team__card-head--link" href="https://www.facebook.com/"><i
+                                        class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a class="team__card-head--link" href="https://linkedin.com"><i
+                                        class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li><a class="team__card-head--link" href="https://www.instagram.com"><i
+                                        class="fa fa-instagram"></i></a>
+                            </li>
+                            <li><a class="team__card-head--link" href="https://twitter.com"><i
+                                        class="fa fa-twitter"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="">
+                    <a href="#" class="team__user">Chris Stewart</a>
+                    <p class="team__cate">Volunteer</p>
+                </div>
+            </div>
+            <div class="team__card">
+                <div class="team__card-head">
+                    <img class="img-fluid" src="https://preview.colorlib.com/theme/oneder/images/person_1.jpg" alt="user image">
+                    <div class="team__card-head--social">
+                        <ul class="">
+                            <li><a class="team__card-head--link" href="https://www.facebook.com/"><i
+                                        class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a class="team__card-head--link" href="https://linkedin.com"><i
+                                        class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li><a class="team__card-head--link" href="https://www.instagram.com"><i
+                                        class="fa fa-instagram"></i></a>
+                            </li>
+                            <li><a class="team__card-head--link" href="https://twitter.com"><i
+                                        class="fa fa-twitter"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="">
+                    <a href="#" class="team__user">Stella Smith</a>
+                    <p class="team__cate">Volunteer</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}

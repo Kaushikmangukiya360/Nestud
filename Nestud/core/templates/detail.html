@@ -1,0 +1,127 @@
+{% extends "base.html" %}
+{% block title %}NeStud - IT Student Palteform {% endblock title %}
+{% block activeCourse %}active{% endblock activeCourse %}
+{% block content %}
+<header class="site-header d-flex flex-column justify-content-center align-items-center course-hero-section">
+    <div class="course-hero-banner">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-5 col-12 mb-5">
+                    <h2 class="text-white text-center"> Introduction to <br> Detail 101</h2>
+                </div>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="{% url "index" %}">Home Page</a></li>
+
+                        <li class="breadcrumb-item"><a href="{% url "Course" %}">Courses</a></li>
+
+                        <li class="breadcrumb-item active" aria-current="page">Details</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="service-details-area-all">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-8 m-auto">
+                <div class="service-details-post">
+                    <article>
+                        <div class="details-post-area">
+                            <div class="image">
+                                <img src="https://html.fleexstudio.com/techxen/assets/img/others/project-details-img1.png" class="img-fluid">
+                            </div>
+                            <div class="heading1">
+                                <h2>Protecting Your Business in the Digital Age of Cyber Security</h2>
+                                <div class="space16"></div>
+                                <p>In today's interconnected world, cybersecurity has become a critical concern for
+                                    businesses of all sizes. With cyber threats evolving rapidly and the increasing
+                                    reliance on digital technology, the importance of cybersecurity cannot be
+                                    overstated. In this blog post, we'll delve into why cybersecurity is essential
+                                    for protecting your business in the digital age.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="details-post-area">
+                            <div class="heading1">
+                                <h5>Preventing Cyber Attacks</h5>
+                                <p>Cyber attacks come in many forms, from phishing scams and malware infections to
+                                    ransomware attacks and DDoS (Distributed Denial of Service) attacks. These
+                                    attacks can have devastating consequences for businesses, ranging from financial
+                                    losses and reputational damage to legal liabilities. By investing in
+                                    cybersecurity measures such as firewalls, intrusion detection systems, and
+                                    security awareness training, businesses can reduce their susceptibility to cyber
+                                    attacks and the impact of security incidents.</p>
+                            </div>
+                            <div class="heading1">
+                                <h5>Ensuring Business Continuity</h5>
+                                <p>In addition to protecting against external threats, cybersecurity also plays a
+                                    crucial role in ensuring business continuity. In the event of a cyber attack or
+                                    data breach, systems may be disrupted, data may be lost or corrupted, and
+                                    downtime can result in significant financial losses. By implementing measures
+                                    such as regular data backups, disaster recovery plans, and incident response
+                                    protocols, businesses can minimize the impact of cyber incidents and maintain
+                                    continuity of operations, even in the face adversity.</p>
+                            </div>
+
+                        </div>
+                    </article>
+                    <article>
+                        <div class="details-post-area">
+                            <div class="video-area-image">
+                                <div class="image">
+                                    <img src="https://html.fleexstudio.com/techxen/assets/img/blog/blog-post-video-img.png" alt="">
+                                </div>
+                            </div>
+                            <div class="heading1">
+                                <h5>Maintaining Regulatory Compliance</h5>
+                                <p>Furthermore, cybersecurity is essential for maintaining compliance with various
+                                    regulations and industry standards governing data privacy and security.
+                                    Non-compliance can result in significant fines, legal penalties, and
+                                    reputational damage to businesses. By implementing security controls and
+                                    adhering to regulations such as GDPR, HIPAA, and PCI-DSS, businesses can
+                                    mitigate the risk of regulatory violations and demonstrate their commitment to
+                                    protecting customer data and privacy.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <div class="blog-details-border"></div>
+
+                    <div class="tags-links">
+                        <div class="row align-items-center">
+                            <div class="col-lg-7">
+                                <div class="tags">
+                                    <ul>
+                                        <li class="text">Tags:</li>
+                                        <li class="tag-text"><a href="#">Business </a></li>
+                                        <li class="tag-text"><a href="#">Services </a></li>
+                                        <li class="tag-text"><a href="#">IT Solution </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="social">
+                                    <ul>
+                                        <li class="icon"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                        <li class="icon"><a href="#"><i class="fa fa-linkedin"></i></a>
+                                        </li>
+                                        <li class="icon"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog-details-border"></div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+{% endblock content %}

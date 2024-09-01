@@ -1,0 +1,162 @@
+{% extends "base.html" %}
+{% block title %}NeStud - IT Student Palteform {% endblock title %}
+{% block activeIntership %}active{% endblock activeIntership %}
+{% block content %}
+    <header class="site-header d-flex flex-column justify-content-center align-items-center course-hero-section">
+        <div class="course-hero-banner">
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-5 col-12 mb-5">
+                        <h2 class="text-white text-center">Apply Intership Form</h2>
+                    </div>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="{% url "Intership" %}">Intership</a></li>
+
+                            <li class="breadcrumb-item active" aria-current="page">Apply Intership</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="contact-page-wrap intership-form section-padding">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-xl-6">
+                    <div class="contact__two-content">
+                        <div class="contact__two-title mb-3">
+                            <span class="subtitle-one">Apply Intership</span>
+                            <h2>All the skills you need in one place</h2>
+                        </div>
+                        <div class="contact__two-form">
+                            <form action="#">
+                                <div class="row gy-4 mb-4">
+                                    <div class="col-xl-6">
+                                        <input type="text" placeholder="Your Name" fdprocessedid="hvmog">
+                                    </div>
+
+                                    <div class="col-xl-6">
+                                        <input type="email" placeholder="Your E-mail" fdprocessedid="brcyo9">
+                                    </div>
+
+                                    <div class="col-xl-12">
+                                        <input type="tel" placeholder="Phone Number" fdprocessedid="9x6axl">
+                                    </div>
+                                    <div class="col-xl-12">
+                                        <input type="file" placeholder="Upload Resume" fdprocessedid="9x6axl" class="file-upload">
+                                    </div>
+                                </div>
+                                <textarea placeholder="Your Message"></textarea>
+                                <button type="submit" class="btn-two main-hover-btn" fdprocessedid="hubmyjk" >
+                                    Confirm Apply
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 intership-description">
+                    <div class="row align-items-center m-0 pb-3 m-0">
+                        <div class="heading_sec col-12 d-flex align-items-center">
+                                                        <img src="https://suratithub.org/storage/company/SIH1724501555.png">
+                            
+                            <div class="ps-3">
+                                <p class="small">By
+                                    Kautilyam
+                                </p>
+                                <h6 class="mb-0">Angular Developer</h6>
+                            </div>
+                        </div>
+                        <div class="row m-0 pb-3 border-bottom intership-box">
+                            <div class="col-md-6 contant_sec_2 mb-3">
+                                <div class="company_features b1 border">
+                                    <p>Contact:<br>(+91) 7600 420 470
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 contant_sec_2 mb-3">
+                                <div class="company_features b2 border">
+                                    <p>Location:<br>N/A,
+                                        </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 contant_sec_2 mb-3">
+                                <div class="company_features b3 border">
+                                    <p>Job Type:<br>Full-time</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 contant_sec_2 mb-3">
+                                <div class="company_features b4 border">
+                                    <p>Experience:<br>Fresher</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contant_sec pt-3">
+                            <h6>Job Description</h6>
+                            <p>Our company excels in providing comprehensive IT infrastructure and network management services, ensuring that businesses can operate smoothly and efficiently in today's digital landscape.</p>
+                        </div>
+                        <div class="tags-links intership-tags">
+                            <div class="row align-items-center">
+                                <div class="col-lg-7">
+                                    <div class="tags">
+                                        <ul>
+                                            <li class="text">Tags:</li>
+                                            <li class="tag-text"><a href="#">Services </a></li>
+                                            <li class="tag-text"><a href="#">IT Solution </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="social">
+                                        <ul>
+                                            <li class="icon"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                            <li class="icon"><a href="#"><i class="fa fa-linkedin"></i></a>
+                                            </li>
+                                            <li class="icon"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="intership-details-blogs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 p-3">
+                    <div class="contact_main_box text-center">
+                        <div class="contact_sub_img shadow p-4">
+                            <img src="https://suratithub.org/image/sales-agent.png" alt="sales-agent">
+                        </div>
+                        <h5>Contact sales team</h5>
+                        <p>How can we help you? Get a quote</p>
+                        <a href="#"><b>Talk to sale</b> <img src="https://suratithub.org/image/arrow_up.png" alt="arrow_up" style="width: 12px;"></a>
+                    </div>
+                </div>
+                <div class="col-md-4 p-3">
+                    <div class="contact_main_box text-center">
+                        <div class="contact_sub_img shadow p-4">
+                            <img src="https://suratithub.org/image/support_team.png" alt="sales-agent">
+                        </div>
+                        <h5>Contact support team</h5>
+                        <p>We are always open to helping you</p>
+                        <a href="info@gmail.com"><b>Email us </b> <img src="https://suratithub.org/image/arrow_up.png" alt="arrow_up" style="width: 12px;"></a>
+                    </div>
+                </div>
+                <div class="col-md-4 p-3">
+                    <div class="contact_main_box text-center">
+                        <div class="contact_sub_img shadow p-4">
+                            <img src="https://suratithub.org/image/sponsor.png" alt="sales-agent">
+                        </div>
+                        <h5>Become a sponsor</h5>
+                        <p>We are here to make you brand.</p>
+                        <a href="contact.html"><b>Join now</b> <img src="https://suratithub.org/image/arrow_up.png" alt="arrow_up" style="width: 12px;"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock content %}

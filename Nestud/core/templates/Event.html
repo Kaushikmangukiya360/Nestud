@@ -1,0 +1,274 @@
+{% extends "base.html" %}
+{% block title %}NeStud - IT Student Palteform {% endblock title %}
+{% block activeEvent %}active{% endblock activeEvent %}
+{% block content %}
+<header class="site-header d-flex flex-column justify-content-center align-items-center course-hero-section">
+    <div class="course-hero-banner">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-5 col-12 mb-5">
+                    <h2 class="text-white text-center">Event</h2>
+                </div>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="{% url "index" %}">Homepage</a></li>
+
+                        <li class="breadcrumb-item active" aria-current="page">Event</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="section-padding event-schedule">
+    <div class="container">
+        <div class="event-title">
+            <span><i class="fa fa-calendar" aria-hidden="true"></i>Event Timetable</span>
+            <h2>Information Of Event <br> Schedule</h2>
+        </div>
+        <div class="all-event-schedule">
+            <div class="event-blog">
+                <!-- img -->
+                <div class="event-image">
+                    <img src="https://eventics.temptics.com/assets/img/evenet-sched-3.jpg" alt="">
+                </div>
+                <!-- text -->
+                <div class="event-text">
+                    <div class="event-text-inner">
+                        <!-- date & time -->
+                        <div class="event-text-wrap">
+                            <div class="date event-txt">
+                                <span class="icon">
+                                    <i class="fa fa-calendar"></i>
+                                </span>
+                                <span class="text-main">24, Jan - 2024</span>
+                            </div>
+                            <div class="time event-txt">
+                                <span class="icon">
+                                    <i class="fa fa-clock-o"></i>
+                                </span>
+                                <span class="text-main">10:00 AM – 2.00 PM</span>
+                            </div>
+                        </div>
+                        <!-- title -->
+                        <h3 class="event-heading">
+                            <a href="event-details.html">
+                                Siempre Son Flores" Musica Cubana Salsa Jazz adipi scing elit. Nullam
+                            </a>
+                        </h3>
+                        <!-- location -->
+                        <div class="schedule-loaction">
+                            <span class="icon">
+                                <i class="fa fa-map-marker"></i>
+                            </span>
+                            <h6 class="text">135 W, 46nd Street, New York</h6>
+                        </div>
+                    </div>
+                    <div class="event-button">
+                        <a href="event-details.html" class="event-join-btn main-hover-outline">Join Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="event-blog">
+                <!-- img -->
+                <div class="event-image">
+                    <img src="https://eventics.temptics.com/assets/img/evenet-sched-1.jpg" alt="">
+                </div>
+                <!-- text -->
+                <div class="event-text">
+                    <div class="event-text-inner">
+                        <!-- date & time -->
+                        <div class="event-text-wrap">
+                            <div class="date event-txt">
+                                <span class="icon">
+                                    <i class="fa fa-calendar"></i>
+                                </span>
+                                <span class="text-main">24, Jan - 2024</span>
+                            </div>
+                            <div class="time event-txt">
+                                <span class="icon">
+                                    <i class="fa fa-clock-o"></i>
+                                </span>
+                                <span class="text-main">10:00 AM – 2.00 PM</span>
+                            </div>
+                        </div>
+                        <!-- title -->
+                        <h3 class="event-heading">
+                            <a href="event-details.html">
+                                Siempre Son Flores" Musica Cubana Salsa Jazz adipi scing elit. Nullam
+                            </a>
+                        </h3>
+                        <!-- location -->
+                        <div class="schedule-loaction">
+                            <span class="icon">
+                                <i class="fa fa-map-marker"></i>
+                            </span>
+                            <h6 class="text">135 W, 46nd Street, New York</h6>
+                        </div>
+                    </div>
+                    <div class="event-button">
+                        <a href="event-details.html" class="event-join-btn main-hover-outline">Join Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="event-blog">
+                <!-- img -->
+                <div class="event-image">
+                    <img src="https://eventics.temptics.com/assets/img/event-detailsimg-3.jpg" alt="">
+                </div>
+                <!-- text -->
+                <div class="event-text">
+                    <div class="event-text-inner">
+                        <!-- date & time -->
+                        <div class="event-text-wrap">
+                            <div class="date event-txt">
+                                <span class="icon">
+                                    <i class="fa fa-calendar"></i>
+                                </span>
+                                <span class="text-main">24, Jan - 2024</span>
+                            </div>
+                            <div class="time event-txt">
+                                <span class="icon">
+                                    <i class="fa fa-clock-o"></i>
+                                </span>
+                                <span class="text-main">10:00 AM – 2.00 PM</span>
+                            </div>
+                        </div>
+                        <!-- title -->
+                        <h3 class="event-heading">
+                            <a href="event-details.html">
+                                Siempre Son Flores" Musica Cubana Salsa Jazz adipi scing elit. Nullam
+                            </a>
+                        </h3>
+                        <!-- location -->
+                        <div class="schedule-loaction">
+                            <span class="icon">
+                                <i class="fa fa-map-marker"></i>
+                            </span>
+                            <h6 class="text">135 W, 46nd Street, New York</h6>
+                        </div>
+                    </div>
+                    <div class="event-button">
+                        <a href="event-details.html" class="event-join-btn main-hover-outline">Join Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="event-blog">
+                <!-- img -->
+                <div class="event-image">
+                    <img src="	https://demo.gloriathemes.com/eventchamp/demo/wp-content/uploads/2018/11/event-1-952x579.jpg"
+                        alt="">
+                </div>
+                <!-- text -->
+                <div class="event-text">
+                    <div class="event-text-inner">
+                        <!-- date & time -->
+                        <div class="event-text-wrap">
+                            <div class="date event-txt">
+                                <span class="icon">
+                                    <i class="fa fa-calendar"></i>
+                                </span>
+                                <span class="text-main">24, Jan - 2024</span>
+                            </div>
+                            <div class="time event-txt">
+                                <span class="icon">
+                                    <i class="fa fa-clock-o"></i>
+                                </span>
+                                <span class="text-main">10:00 AM – 2.00 PM</span>
+                            </div>
+                        </div>
+                        <!-- title -->
+                        <h3 class="event-heading">
+                            <a href="event-details.html">
+                                Siempre Son Flores" Musica Cubana Salsa Jazz adipi scing elit. Nullam
+                            </a>
+                        </h3>
+                        <!-- location -->
+                        <div class="schedule-loaction">
+                            <span class="icon">
+                                <i class="fa fa-map-marker"></i>
+                            </span>
+                            <h6 class="text">135 W, 46nd Street, New York</h6>
+                        </div>
+                    </div>
+                    <div class="event-button">
+                        <a href="event-details.html" class="event-join-btn main-hover-outline">Join Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-padding event-blog-detail">
+    <div class="container">
+        <div class="row">
+            <div class="event-blog-grid">
+                <div class="event-blog-left">
+                    <div class="kg-blog-event-title">
+                        <span>Event Venue Map</span>
+                        <h2>Get Direction To The Event Venue</h2>
+                    </div>
+                    <div class="event-blog-map">
+                        <iframe class="w-100"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3649.4956336954656!2d90.36980847512216!3d23.836527785464774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c1cb3b7d94db%3A0xa1df58d67a2ce274!2sUi%20Barn!5e0!3m2!1sen!2sbd!4v1692610804504!5m2!1sen!2sbd"
+                            width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="event-blog-left event-blog-right">
+                    <div class="kg-blog-event-title">
+                        <span>Build Your Career</span>
+                        <h2>Get Join Our Event</h2>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered alteration in some form, by injected humour, or randomised words which don't
+                            look</p>
+                        <div class="event-btn open-popup-btn-event main-hover-outline">Apply Now</div>
+                    </div>
+                    <div class="event-blog-map-image">
+                        <img src="https://eventics.temptics.com/assets/img/cta-img.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="event-form-popup">
+                <div class="event-form-popup-inner">
+                    <div class="event-popup-close-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50" width="50px" height="50px"><line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="7" y1="7" x2="43" y2="43"/><line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="43" y1="7" x2="7" y2="43"/></svg>
+                    </div>
+                    <div class="event-form-inner-content">
+                       <h2>Create Your Webinar</h2>
+                       <div class="event-webinar-form">
+                        <form action="#">
+                            <div class="row gy-4">
+                                <div class="col-12">
+                                    <input type="text" placeholder="Event Name" fdprocessedid="hvmog">
+                                </div>
+
+                                <div class="col-12">
+                                    <input type="date" placeholder="Event Date" fdprocessedid="brcyo9">
+                                </div>
+
+                                <div class="col-12">
+                                    <input type="time" placeholder="Event Time" fdprocessedid="9x6axl">
+                                </div>
+
+                                <div class="col-12">
+                                    <input type="text" placeholder="Subject" fdprocessedid="kfzram">
+                                </div>
+                                <div class="col-12">
+                                <button type="submit" class="btn-event-submit main-hover-btn" fdprocessedid="hubmyjk">
+                                    Submit Now
+                                </button>
+                            </div>
+                            </div>
+                           
+                        </form>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}

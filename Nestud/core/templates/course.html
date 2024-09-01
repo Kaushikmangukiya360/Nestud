@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+{% block title %}NeStud - IT Student Palteform {% endblock title %}
+{% block activeCourse %}active{% endblock activeCourse %}
+{% block content %}
+
+<header class="site-header d-flex flex-column justify-content-center align-items-center course-hero-section">
+    <div class="course-hero-banner">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-5 col-12 mb-5">
+                    <h2 class="text-white text-center"> Courses</h2>
+                </div>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="{% url "index" %}">Homepage</a></li>
+
+                        <li class="breadcrumb-item active" aria-current="page">Courses</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="shop-area site-header position-relative">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 col-md-6 ">
+                <div class="courses-item ">
+                    <div class="thumb fix"> <a href="{% url "CourseDetails" %}">
+                            <img width="1180" height="664"
+                                src="https://wpdemo.zcubethemes.com/qeducato/wp-content/uploads/2023/03/couress-img-1.jpg"
+                                class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt=""> </a>
+                    </div>
+                    <div class="courses-content">
+                        <div class="cat"><i class="fa fa-graduation-cap"></i> Biochemistry</div>
+                        <h3><a href="{% url "CourseDetails" %}">Biochemistry</a>
+                        </h3>
+                        <p>Seamlessly visualize quality ellectual capital without superior collaboration and idea
+                            tically</p>
+                            <span class="price">$60.00</span>
+                            <a href="{% url "CourseDetails" %}" class="course-btn main-hover-btn">More Info <span><i class="fa fa-arrow-right"></i></span></a>
+                        </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 ">
+                <div class="courses-item">
+                    <div class="thumb fix"> <a
+                            href="{% url "CourseDetails" %}"> <img
+                                decoding="async" width="1180" height="664"
+                                src="https://wpdemo.zcubethemes.com/qeducato/wp-content/uploads/2023/02/couress-img-2.jpg"
+                                class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt=""> </a>
+                    </div>
+                    <div class="courses-content">
+                        <div class="cat"><i class="fa fa-graduation-cap"></i> Economics</div>
+                        <h3><a href="{% url "CourseDetails" %}">Major in
+                                Economics</a></h3>
+                        <p>Seamlessly visualize quality ellectual capital without superior collaboration and idea
+                            tically</p> 
+                            <span class="price">$250.00</span>
+                            <a href="{% url "CourseDetails" %}" class="course-btn main-hover-btn">More Info <span><i class="fa fa-arrow-right"></i></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 ">
+                <div class="courses-item">
+                    <div class="thumb fix"> <a
+                            href="{% url "CourseDetails" %}"> <img
+                                decoding="async" width="1180" height="664"
+                                src="https://wpdemo.zcubethemes.com/qeducato/wp-content/uploads/2023/02/couress-img-3.jpg"
+                                class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt=""> </a>
+                    </div>
+                    <div class="courses-content">
+                        <div class="cat"><i class="fa fa-graduation-cap"></i> Media</div>
+                        <h3><a href="{% url "CourseDetails" %}">Business
+                                Media</a></h3>
+                        <p>Seamlessly visualize quality ellectual capital without superior collaboration and idea
+                            tically</p>
+                            <span class="price">$100.00</span>
+                            <a href="{% url "CourseDetails" %}" class="course-btn main-hover-btn">More Info <span><i class="fa fa-arrow-right"></i></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 ">
+                <div class="courses-item">
+                    <div class="thumb fix"> <a
+                            href="{% url "CourseDetails" %}"> <img
+                                loading="lazy" decoding="async" width="1180" height="664"
+                                src="https://wpdemo.zcubethemes.com/qeducato/wp-content/uploads/2023/02/couress-img-4.jpg"
+                                class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt=""> </a>
+                    </div>
+                    <div class="courses-content">
+                        <div class="cat"><i class="fa fa-graduation-cap"></i> Public</div>
+                        <h3><a href="{% url "CourseDetails" %}">Public
+                                Administration</a></h3>
+                        <p>Seamlessly visualize quality ellectual capital without superior collaboration and idea
+                            tically</p> 
+                            <span class="price">$85.00</span>
+                            <a href="{% url "CourseDetails" %}" class="course-btn main-hover-btn">More Info <span><i class="fa fa-arrow-right"></i></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock content %}

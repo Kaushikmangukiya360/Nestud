@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+{% block title %}NeStud - IT Student Palteform {% endblock title %}
+{% block activeContact %}active{% endblock activeContact %}
+{% block content %}
+<header class="site-header d-flex flex-column justify-content-center align-items-center course-hero-section">
+        <div class="course-hero-banner">
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-5 col-12 mb-5">
+                        <h2 class="text-white text-center"> Contact Us</h2>
+                    </div>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="{% url "index" %}">Homepage</a></li>
+
+                            <li class="breadcrumb-item active" aria-current="page">Contact</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="contact-page-wrap section-padding">
+        <div class="container">
+            <div class="row gy-4 align-items-center">
+                <div class="col-xl-6">
+                    <div class="contact__two-content">
+                        <div class="contact__two-title">
+                            <span class="subtitle-one">Contact us</span>
+                            <h2>Do you have any question? </h2>
+                            <p>Got a question or need assistance? Contact us and our dedicated team at Surat IT Hub will be ready to support you and address your inquiries promptly.</p>
+                        </div>
+                        <div class="contact__two-form">
+                            <form action="#">
+                                <div class="row gy-4 mb-4">
+                                    <div class="col-xl-6">
+                                        <input type="text" placeholder="Your Name" fdprocessedid="hvmog">
+                                    </div>
+
+                                    <div class="col-xl-6">
+                                        <input type="email" placeholder="Your E-mail" fdprocessedid="brcyo9">
+                                    </div>
+
+                                    <div class="col-xl-6">
+                                        <input type="tel" placeholder="Phone Number" fdprocessedid="9x6axl">
+                                    </div>
+
+                                    <div class="col-xl-6">
+                                        <input type="text" placeholder="Subject" fdprocessedid="kfzram">
+                                    </div>
+                                </div>
+                                <textarea placeholder="Your Message"></textarea>
+                                <button type="submit" class="btn-two main-hover-btn" fdprocessedid="hubmyjk">
+                                    Submit Now
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="contact__two-contact-info">
+                        <div class="contact__two-single-info">
+                            <div class="contact__two-single-info-icon">
+                                <img src="https://html.themeori.net/bantec/assets/img/icon//service-1.png" alt="image">
+                            </div>
+                            <div class="contact__two-single-info-content">
+                                <h4>Email</h4>
+                                <span>michelle.rivera@example.com</span>
+                                <span>willie.jennings@example.com</span>
+                            </div>
+                        </div>
+                        <div class="contact__two-single-info">
+                            <div class="contact__two-single-info-icon">
+                                <img src="https://html.themeori.net/bantec/assets/img/icon//service-2.png" alt="image">
+                            </div>
+                            <div class="contact__two-single-info-content">
+                                <h4>Contacts</h4>
+                                <span>(270) 555-0117</span>
+                                <span>(704) 555-0127</span>
+                            </div>
+                        </div>
+                        <div class="contact__two-single-info">
+                            <div class="contact__two-single-info-icon">
+                                <img src="https://html.themeori.net/bantec/assets/img/icon//service-3.png" alt="image">
+                            </div>
+                            <div class="contact__two-single-info-content">
+                                <h4>Date</h4>
+                                <span>Saturday 10.Am To 2.Pm</span>
+                                <span>Sunday 2.Pm To 7.Pm</span>
+                            </div>
+                        </div>
+                        <div class="contact__two-single-info">
+                            <div class="contact__two-single-info-icon">
+                                <img src="https://html.themeori.net/bantec/assets/img/icon/service-4.png" alt="image">
+                            </div>
+                            <div class="contact__two-single-info-content">
+                                <h4>Location</h4>
+                                <span>8502 Preston Rd. Inglewood, Maine 98380</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock content %}

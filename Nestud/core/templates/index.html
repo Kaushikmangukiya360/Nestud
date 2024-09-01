@@ -1,0 +1,458 @@
+{% extends "base.html" %}
+{% block title %}NeStud - IT Student Palteform {% endblock title %}
+{% block activeHome %}active{% endblock activeHome %}
+{% block content %}
+<section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-8 col-12 mx-auto">
+                <h1 class="text-white text-center">Discover. Learn. Enjoy</h1>
+
+                <h6 class="text-center">platform for creatives around the world</h6>
+
+                <form method="get" class="custom-form mt-4 pt-2 mb-lg-0 mb-5" role="search">
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-text bi-search" id="basic-addon1">
+                            <i class="fa fa-search"></i>
+                        </span>
+
+                        <input name="keyword" type="search" class="form-control" id="keyword"
+                            placeholder="Design, Code, Intership, Course ..." aria-label="Search">
+
+                        <button type="submit" class="form-control">Search</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="mission_vision_sec">
+    <div class="container">
+        <div class="row aos-init aos-animate" data-aos="fade-up">
+            <div class="col-md-4 p-2">
+                <div class="mission_vision_main_box b2 border">
+                    <img src="https://suratithub.org/image/vision.png" alt="vision" loading="lazy">
+                    <div class="mission_vision_content ">
+                        <h3>Vision</h3>
+                        <p class="text-secondary">To empower students with a comprehensive and accessible resource management platform that enhances their academic journey, fosters professional growth, and builds a strong alumni network.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 p-2">
+                <div class="mission_vision_main_box b1 border">
+                    <img src="https://suratithub.org/image/rocket.png" alt="mission" loading="lazy">
+                    <div class="mission_vision_content">
+                        <h3>Mission</h3>
+                        <p class="text-secondary">To provide a centralized platform that seamlessly integrates academic resources, internships, courses, events, scholarships, feedback, and alumni connections, enabling students to maximize their potential and achieve their career aspirations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 p-2">
+                <div class="mission_vision_main_box b3 border">
+                    <img src="https://suratithub.org/image/mission.png" alt="goal" loading="lazy">
+                    <div class="mission_vision_content">
+                        <h3>Goal</h3>
+                        <p class="text-secondary">Our goal is to create a seamless and integrated platform that enhances the academic and professional journey of students by providing centralized access to essential resources, including internships, courses, events, and scholarships.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="home-about-wrap">
+    <div class="container">
+        <div class="row align-items-center gy-4">
+
+            <div class="col-xl-6 col-lg-6 col-md-9">
+                <div class="technology-solution__one-content">
+                    <div class="heading1">
+                        <span>About Our Company</span>
+                        <h2>About NeStud: 
+                            Empowering Students, 
+                            Unlocking Opportunities
+                        </h2>
+                        <p>At NeStud, we are committed to revolutionizing the way students access and manage academic resources throughout their educational journey. Our platform was born out of a desire to bridge the gap between students and the multitude of opportunities available to them, whether in academics, internships, scholarships, or professional networking. By offering a centralized and intuitive platform, we empower students to take control of their education and career development.</p>
+
+                        <ul>
+                            <li><span><i class="fa fa-check-circle"></i></span> Centralized Access to Resources.</li>
+                            <li><span><i class="fa fa-check-circle"></i></span> Community-Driven Success. </li>
+                            <li><span><i class="fa fa-check-circle"></i></span> Innovation in Education.</li>
+                        </ul>
+                        <div>
+                            <a class="theme-btn1 main-hover-btn" href="{% url "Intership" %}">View Intership </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6">
+                <div class="technology-solution__one-image">
+                    <div class="technology-solution__one-image-wrapper">
+                        <img src="https://html.fleexstudio.com/techxen/assets/img/about/about1-img2.png"
+                            alt="image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="faq-section section-padding" id="section_4">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-6 col-12">
+                <h2 class="mb-4">Frequently Asked Questions</h2>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="col-lg-5 col-12">
+                <img src="Static/Image/9650829_7879.jpg"
+                    class="img-fluid" alt="FAQs">
+            </div>
+
+            <div class="col-lg-6 col-12 m-auto">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                What is Nestud?
+                            </button>
+                        </h2>
+
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Nestud is a comprehensive student resource management platform designed to centralize access to academic resources, internships, scholarships, courses, and more. It also facilitates connections between students, alumni, and professionals to support educational and career growth.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Who can use Nestud?
+                            </button>
+                        </h2>
+
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Nestud is designed for students, educational institutions, and alumni. Current students can use the platform to access resources and opportunities, while alumni can connect with their alma mater and provide mentorship or job opportunities.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Is Nestud free to use?
+                            </button>
+                        </h2>
+
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Yes, Nestud is free for students to use. Our goal is to provide accessible resources and opportunities to help students succeed in their academic and professional journeys.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="testimonial-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title text-center">
+                    <h5><i class="fa fa-graduation-cap"></i> Testimonial</h5>
+                    <h2> What Our Clients Says</h2>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="testimonial-active">
+                    <div class="single-testimonial text-center">
+                        <div class="qt-img">
+                            <img decoding="async" src="https://md-aqil.github.io/images/quote.png" alt="">
+                        </div>
+                        <p>Curabitur ac tortor ante. Sed quis iaculis risus. Ut ultrices ligula aliquet odio
+                            tristique euismod. Donec efficitur dolor in turpis aliquet, at mollis.</p>
+                        <div class="testi-author"> <img decoding="async"
+                                src="https://wpdemo.zcubethemes.com/qeducato/wp-content/uploads/2023/03/testi_avatar.png"
+                                alt="">
+                        </div>
+                        <div class="ta-info">
+                            <h6>Roboto Eorure</h6> <span>Web Developer</span>
+                        </div>
+                    </div>
+                    <div class="single-testimonial text-center">
+                        <div class="qt-img">
+                            <img decoding="async" src="https://md-aqil.github.io/images/quote.png" alt="">
+                        </div>
+                        <p>Curabitur ac tortor ante. Sed quis iaculis risus. Ut ultrices ligula aliquet odio
+                            tristique euismod. Donec efficitur dolor in turpis aliquet, at mollis.</p>
+                        <div class="testi-author"> <img decoding="async"
+                                src="https://wpdemo.zcubethemes.com/qeducato/wp-content/uploads/2023/03/testi_avatar.png"
+                                alt="">
+                        </div>
+                        <div class="ta-info">
+                            <h6>Roboto Eorure</h6> <span>Web Developer</span>
+                        </div>
+                    </div>
+                    <div class="single-testimonial text-center">
+                        <div class="qt-img">
+                            <img decoding="async" src="https://md-aqil.github.io/images/quote.png" alt="">
+                        </div>
+                        <p>Curabitur ac tortor ante. Sed quis iaculis risus. Ut ultrices ligula aliquet odio
+                            tristique euismod. Donec efficitur dolor in turpis aliquet, at mollis.</p>
+                        <div class="testi-author"> <img decoding="async"
+                                src="https://wpdemo.zcubethemes.com/qeducato/wp-content/uploads/2023/03/testi_avatar.png"
+                                alt="">
+                        </div>
+                        <div class="ta-info">
+                            <h6>Roboto Eorure</h6> <span>Web Developer</span>
+                        </div>
+                    </div>
+                    <div class="single-testimonial text-center">
+                        <div class="qt-img">
+                            <img decoding="async" src="https://md-aqil.github.io/images/quote.png" alt="">
+                        </div>
+                        <p>Curabitur ac tortor ante. Sed quis iaculis risus. Ut ultrices ligula aliquet odio
+                            tristique euismod. Donec efficitur dolor in turpis aliquet, at mollis.</p>
+                        <div class="testi-author"> <img decoding="async"
+                                src="https://wpdemo.zcubethemes.com/qeducato/wp-content/uploads/2023/03/testi_avatar.png"
+                                alt="">
+                        </div>
+                        <div class="ta-info">
+                            <h6>Roboto Eorure</h6> <span>Web Developer</span>
+                        </div>
+                    </div>
+                    <div class="single-testimonial text-center">
+                        <div class="qt-img">
+                            <img decoding="async" src="https://md-aqil.github.io/images/quote.png" alt="">
+                        </div>
+                        <p>Curabitur ac tortor ante. Sed quis iaculis risus. Ut ultrices ligula aliquet odio
+                            tristique euismod. Donec efficitur dolor in turpis aliquet, at mollis.</p>
+                        <div class="testi-author"> <img decoding="async"
+                                src="https://wpdemo.zcubethemes.com/qeducato/wp-content/uploads/2023/03/testi_avatar.png"
+                                alt="">
+                        </div>
+                        <div class="ta-info">
+                            <h6>Roboto Eorure</h6> <span>Web Developer</span>
+                        </div>
+                    </div>
+                    <div class="single-testimonial text-center">
+                        <div class="qt-img">
+                            <img decoding="async" src="https://md-aqil.github.io/images/quote.png" alt="">
+                        </div>
+                        <p>Curabitur ac tortor ante. Sed quis iaculis risus. Ut ultrices ligula aliquet odio
+                            tristique euismod. Donec efficitur dolor in turpis aliquet, at mollis.</p>
+                        <div class="testi-author"> <img decoding="async"
+                                src="https://wpdemo.zcubethemes.com/qeducato/wp-content/uploads/2023/03/testi_avatar.png"
+                                alt="">
+                        </div>
+                        <div class="ta-info">
+                            <h6>Roboto Eorure</h6> <span>Web Developer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact-section section-padding section-bg" id="section_5">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-12 col-12 text-center">
+                <h2 class="mb-5">Get in touch</h2>
+            </div>
+
+            <div class="col-lg-5 col-12 mb-4 mb-lg-0">
+                <iframe class="google-map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1393.0250022824716!2d72.87193465241606!3d21.234599118527473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04fbe056894ef%3A0x7bfc941e108f23a5!2sIT%20Park!5e0!3m2!1sen!2sin!4v1725170687514!5m2!1sen!2sin"
+                    width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-12 mb-3 mb-lg- mb-md-0 ms-auto">
+                <h4 class="mb-3">Head office</h4>
+
+                <p>302, Pragati IT Park, Digital Velly, Surat</p>
+
+                <hr>
+
+                <p class="d-flex align-items-center mb-1">
+                    <span class="me-2">Phone</span>
+
+                    <a href="tel: 7069017730" class="site-footer-link">
+                        7069017730
+                    </a>
+                </p>
+
+                <p class="d-flex align-items-center">
+                    <span class="me-2">Email</span>
+
+                    <a href="mailto:kaushikmangukiya70@gmail.com" class="site-footer-link">
+                        kaushikmangukiya70@gmail.com
+                    </a>
+                </p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-12 mx-auto">
+                <h4 class="mb-3">Dubai office</h4>
+
+                <p>Burj Park, Downtown Dubai, United Arab Emirates</p>
+
+                <hr>
+
+                <p class="d-flex align-items-center mb-1">
+                    <span class="me-2">Phone</span>
+
+                    <a href="tel: 110-220-3400" class="site-footer-link">
+                        110-220-3400
+                    </a>
+                </p>
+
+                <p class="d-flex align-items-center">
+                    <span class="me-2">Email</span>
+
+                    <a href="mailto:info@company.com" class="site-footer-link">
+                        info@NeStud.com.com
+                    </a>
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="team-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-9 col-lg-6 text-center m-auto">
+                <h3 class="global__text">
+                    <i class="fa fa-group"></i>our team</h3>
+                <h2 class="global__heading">Our Expert Volunteer
+                </h2>
+            </div>
+        </div>
+
+        <div class="team__grid">
+            <!-- User 01 -->
+            <div class="team__card">
+                <div class="team__card-head">
+                    <img class="img-fluid" src="https://asset.uibucket.net/html/safefundz/assets/img/user-1.png" alt="user image">
+                    <div class="team__card-head--social">
+                        <ul class="">
+                            <li><a class="team__card-head--link" href="https://www.facebook.com/"><i
+                                        class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a class="team__card-head--link" href="https://linkedin.com"><i
+                                        class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li><a class="team__card-head--link" href="https://www.instagram.com"><i
+                                        class="fa fa-instagram"></i></a>
+                            </li>
+                            <li><a class="team__card-head--link" href="https://twitter.com"><i
+                                        class="fa fa-twitter"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="">
+                    <a href="#" class="team__user">Leslie Alexander</a>
+                    <p class="team__cate">Volunteer</p>
+                </div>
+            </div>
+            <div class="team__card">
+                <div class="team__card-head">
+                    <img class="img-fluid" src="https://asset.uibucket.net/html/safefundz/assets/img/user-2.png" alt="user image">
+                    <div class="team__card-head--social">
+                        <ul class="">
+                            <li><a class="team__card-head--link" href="https://www.facebook.com/"><i
+                                        class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a class="team__card-head--link" href="https://linkedin.com"><i
+                                        class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li><a class="team__card-head--link" href="https://www.instagram.com"><i
+                                        class="fa fa-instagram"></i></a>
+                            </li>
+                            <li><a class="team__card-head--link" href="https://twitter.com"><i
+                                        class="fa fa-twitter"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="">
+                    <a href="#" class="team__user">Marilyn Ramirez</a>
+                    <p class="team__cate">Volunteer</p>
+                </div>
+            </div>
+            <div class="team__card">
+                <div class="team__card-head">
+                    <img class="img-fluid" src="https://asset.uibucket.net/html/safefundz/assets/img/user-3.png" alt="user image">
+                    <div class="team__card-head--social">
+                        <ul class="">
+                            <li><a class="team__card-head--link" href="https://www.facebook.com/"><i
+                                        class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a class="team__card-head--link" href="https://linkedin.com"><i
+                                        class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li><a class="team__card-head--link" href="https://www.instagram.com"><i
+                                        class="fa fa-instagram"></i></a>
+                            </li>
+                            <li><a class="team__card-head--link" href="https://twitter.com"><i
+                                        class="fa fa-twitter"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="">
+                    <a href="#" class="team__user">Dianne Russell</a>
+                    <p class="team__cate">Volunteer</p>
+                </div>
+            </div>
+            <div class="team__card">
+                <div class="team__card-head">
+                    <img class="img-fluid" src="https://asset.uibucket.net/html/safefundz/assets/img/user-4.png" alt="user image">
+                    <div class="team__card-head--social">
+                        <ul class="">
+                            <li><a class="team__card-head--link" href="https://www.facebook.com/"><i
+                                        class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a class="team__card-head--link" href="https://linkedin.com"><i
+                                        class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li><a class="team__card-head--link" href="https://www.instagram.com"><i
+                                        class="fa fa-instagram"></i></a>
+                            </li>
+                            <li><a class="team__card-head--link" href="https://twitter.com"><i
+                                        class="fa fa-twitter"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="">
+                    <a href="#" class="team__user">Jenny Wilson</a>
+                    <p class="team__cate">Volunteer</p>
+                </div>
+            </div>
+        </div>
+        <div class="team-button">
+            <a href="mentorship.html" class="team-btn main-hover-btn">Expolre Volunteer</a>
+        </div>
+    </div>
+</section>
+{% endblock content %}
