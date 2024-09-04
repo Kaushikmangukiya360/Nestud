@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import *
 
 def index(request):
     return render(request, 'index.html')
@@ -22,5 +23,15 @@ def Event(request):
 def Mentors(request):
     return render(request, 'mentorship.html')
 
-def Contact(request):
+def ContactView(request):
+    if request.method == "POST":
+        name = request.POST.get('name')
+        contact = request.POST.get('tel')
+        email = request.POST.get('email')
+        subject = request.POST.get('subject')
+        message = request.POST.get('message')
+        Contact.objects.create(name=name,contact=contact,email=email,subject=subject,message=message)
+    if request.method == "POST":
+        newsletter = request.POST.get('newsletter-email')
+        Newsletter.objects.create(email=newsletter)
     return render(request, 'contact.html')

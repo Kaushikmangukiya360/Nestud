@@ -37,7 +37,12 @@ class InternshipApplicationAdmin(admin.ModelAdmin):
     search_fields = ('applicant__username', 'internship__company_name')
     date_hierarchy = 'application_date'
     ordering = ('-application_date',)
-
+    readonly_fields = ('internship', 'applicant', 'contact', 'email', 'application_date', 'resume', 'cover_letter')
+    def get_readonly_fields(self, request, obj=None):
+        if obj:  # When editing an existing object
+            return self.readonly_fields + ('internship', 'applicant', 'contact', 'email', 'application_date', 'resume', 'cover_letter')
+        return self.readonly_fields
+    
 @admin.register(Course)
 class CourseAdmin(admin.ModelAdmin):
     list_display = ('title', 'tag', 'status')

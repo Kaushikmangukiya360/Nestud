@@ -31,25 +31,26 @@
                             <p>Got a question or need assistance? Contact us and our dedicated team at Surat IT Hub will be ready to support you and address your inquiries promptly.</p>
                         </div>
                         <div class="contact__two-form">
-                            <form action="#">
+                            <form method="post" action="#">
+                                {% csrf_token %}
                                 <div class="row gy-4 mb-4">
                                     <div class="col-xl-6">
-                                        <input type="text" placeholder="Your Name" fdprocessedid="hvmog">
+                                        <input type="text" name="name" placeholder="Your Name" fdprocessedid="hvmog">
                                     </div>
 
                                     <div class="col-xl-6">
-                                        <input type="email" placeholder="Your E-mail" fdprocessedid="brcyo9">
+                                        <input type="email" name="email" placeholder="Your E-mail" fdprocessedid="brcyo9">
                                     </div>
 
                                     <div class="col-xl-6">
-                                        <input type="tel" placeholder="Phone Number" fdprocessedid="9x6axl">
+                                        <input type="tel" name="tel" placeholder="Phone Number" fdprocessedid="9x6axl">
                                     </div>
 
                                     <div class="col-xl-6">
-                                        <input type="text" placeholder="Subject" fdprocessedid="kfzram">
+                                        <input type="text" name="subject" placeholder="Subject" fdprocessedid="kfzram">
                                     </div>
                                 </div>
-                                <textarea placeholder="Your Message"></textarea>
+                                <textarea name="message" placeholder="Your Message"></textarea>
                                 <button type="submit" class="btn-two main-hover-btn" fdprocessedid="hubmyjk">
                                     Submit Now
                                 </button>

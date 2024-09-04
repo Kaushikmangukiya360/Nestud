@@ -25,6 +25,6 @@ urlpatterns = [
     path("intership", views.Intership, name="Intership"),
     path("Event", views.Event, name="Event"),
     path("Mentors", views.Mentors, name="Mentors"),
-    path("Contact", views.Contact, name="Contact"),
+    path("Contact", views.ContactView, name="Contact"),
     path("intership/details", views.IntershipForm, name="IntershipForm"),
 ]
