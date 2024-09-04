@@ -21,6 +21,9 @@ def Event(request):
     return render(request, 'Event.html')
 
 def Mentors(request):
+    if request.method == "POST":
+        newsletter = request.POST.get('newsletter-email')
+        Newsletter.objects.create(email=newsletter)
     return render(request, 'mentorship.html')
 
 def ContactView(request):
@@ -31,6 +34,7 @@ def ContactView(request):
         subject = request.POST.get('subject')
         message = request.POST.get('message')
         Contact.objects.create(name=name,contact=contact,email=email,subject=subject,message=message)
+        
     if request.method == "POST":
         newsletter = request.POST.get('newsletter-email')
         Newsletter.objects.create(email=newsletter)

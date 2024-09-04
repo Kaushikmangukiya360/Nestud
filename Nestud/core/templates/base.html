@@ -82,7 +82,8 @@
                     <p>Don't miss out on the essential IT news and updates - join our newsletter community today!
                     </p>
                 </div>
-                <form action="#" class="subscribe__one-form">
+                <form action="#" method="POST" class="subscribe__one-form">
+                    {% csrf_token %}
                     <input type="email" name="newsletter-email" placeholder="Enter Your Email" fdprocessedid="audlpi">
                     <button class="btn-two" type="submit" fdprocessedid="noq5qv">subscribe now</button>
                 </form>
